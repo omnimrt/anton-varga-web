@@ -1,0 +1,14 @@
+.image {
+  height: auto;
+  background-size: cover;
+}
+
+.imageWrapper {
+  width: 20%;
+  height: 120px;
+  overflow: hidden;
+}
+
+.imageWrapper img {
+  width: 100%;
+}

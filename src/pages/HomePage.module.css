@@ -1,0 +1,11 @@
+.homePage {
+  display: flex;
+}
+
+.aside {
+  flex: 1;
+}
+
+.main {
+  flex: 3;
+}

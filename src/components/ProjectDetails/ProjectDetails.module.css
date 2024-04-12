@@ -1,0 +1,6 @@
+.carouselContainer {
+  max-width: 900px;
+  max-height: auto;
+  overflow: hidden;
+  background-size: cover;
+}
