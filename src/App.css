@@ -1,6 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 70px 95px 50px 25px;
+  overflow: hidden;
+}
+
 ul,
 ol {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+img {
+  max-width: 100%;
 }

@@ -4,3 +4,22 @@
   justify-content: flex-start;
   align-items: flex-start;
 }
+
+.link {
+  text-decoration: none;
+  color: #000;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.cvLink {
+  margin-bottom: 25px;
+}
+
+.logo {
+  margin: 0;
+  padding-bottom: 25px;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
