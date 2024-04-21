@@ -1,7 +1,9 @@
+import css from "./AboutPage.module.css";
+
 const AboutPage = () => {
   return (
-    <div>
-      <p>
+    <div className={css.container}>
+      <p className={css.text}>
         Anton Varga was born in 1989 in Uzhhorod (Zakarpatian region, Ukraine).
         He studied at Zakarpatia Art Institute (BFA, 2010), Kharkiv State
         Academy of Art & Design (2012), and Rutgers University (MFA, 2024). He

@@ -1,20 +1,42 @@
+import { useParams, Link } from "react-router-dom";
 import css from "./ImageGallery.module.css";
-import ImageCard from "../ImageCard/ImageCard";
-import Loader from "../Loader/Loader";
 
-const ImageGallery = ({ project, onImageClick }) => {
+import { useState } from "react";
+
+const ImageGallery = ({ projects }) => {
+  const { id } = useParams();
+  const [activeImage, setActiveImage] = useState(null);
+
   const handleImageClick = (image) => {
-    console.log("Clicked Image:", image); // Log the clicked image
-    onImageClick(image); // Pass the clicked image to the parent component
+    setActiveImage(image);
   };
+  console.log(activeImage);
+
+  const selectedProject = projects.find(
+    (project) => project.id === parseInt(id) || id === undefined
+  );
 
   return (
     <div>
-      <div className={css.imageGallery}>
-        <Loader />
-        <ImageCard project={project} onImageClick={handleImageClick} />
-      </div>
-      <h2 className={css.title}>{project.title}</h2>
+      <ul className={css.imageList}>
+        {selectedProject.images.map((image) => (
+          <li className={css.imageItem} key={image.id}>
+            <Link to={`/projects/${id}/projectview`}>
+              <img
+                src={image.path}
+                alt={image.alt}
+                onClick={() => handleImageClick(image)}
+              />
+            </Link>
+          </li>
+        ))}
+      </ul>
+      <h1 className={css.title}>{selectedProject.title}</h1>
+      <p className={css.description}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident eos
+        quisquam totam quidem libero rem quibusdam sit aliquam laboriosam
+        officia.
+      </p>
     </div>
   );
 };

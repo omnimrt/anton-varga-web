@@ -1,18 +1,16 @@
+import { NavLink } from "react-router-dom";
+import { useState } from "react";
 import css from "./ProjectList.module.css";
 
-const ProjectList = ({ projects, onSelectedProject }) => {
+const ProjectList = ({ projects }) => {
   return (
     <div>
-      <ul>
+      <ul className={css.projectList}>
         {projects.map((project) => (
-          <li key={project.id}>
-            <button
-              type="button"
-              className={css.button}
-              onClick={() => onSelectedProject(project)}
-            >
+          <li className={css.projectItem} key={project.id}>
+            <NavLink to={`/projects/${project.id}`} className={css.projectLink}>
               {project.title}
-            </button>
+            </NavLink>
           </li>
         ))}
       </ul>

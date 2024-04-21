@@ -1,0 +1,13 @@
+.container {
+  width: 75%;
+  padding-top: 75px;
+}
+
+.text {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  text-align: justify;
+}
