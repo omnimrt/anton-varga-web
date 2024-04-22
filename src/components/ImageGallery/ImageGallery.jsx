@@ -1,42 +1,49 @@
-import { useParams, Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import css from "./ImageGallery.module.css";
-
-import { useState } from "react";
+import ProjectDetails from "../ProjectDetails/ProjectDetails";
 
 const ImageGallery = ({ projects }) => {
-  const { id } = useParams();
-  const [activeImage, setActiveImage] = useState(null);
+  const { id: currentId } = useParams();
+  const [selectedImage, setSelectedImage] = useState(null);
 
-  const handleImageClick = (image) => {
-    setActiveImage(image);
-  };
-  console.log(activeImage);
+  useEffect(() => {
+    console.log("Selected Image:", selectedImage);
+  }, [selectedImage]);
+
+  // Reset selectedImage when the id parameter changes
+  useEffect(() => {
+    setSelectedImage(null);
+  }, [currentId]);
 
   const selectedProject = projects.find(
-    (project) => project.id === parseInt(id) || id === undefined
+    (project) => project.id === parseInt(currentId) || currentId === undefined
   );
+
+  const handleImageClick = (image) => {
+    setSelectedImage(image);
+  };
 
   return (
     <div>
-      <ul className={css.imageList}>
-        {selectedProject.images.map((image) => (
-          <li className={css.imageItem} key={image.id}>
-            <Link to={`/projects/${id}/projectview`}>
+      {selectedImage ? (
+        <ProjectDetails
+          selectedProject={selectedProject}
+          selectedImage={selectedImage}
+        />
+      ) : (
+        <ul className={css.imageList}>
+          {selectedProject?.images.map((image) => (
+            <li className={css.imageItem} key={image.id}>
               <img
                 src={image.path}
                 alt={image.alt}
                 onClick={() => handleImageClick(image)}
               />
-            </Link>
-          </li>
-        ))}
-      </ul>
-      <h1 className={css.title}>{selectedProject.title}</h1>
-      <p className={css.description}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident eos
-        quisquam totam quidem libero rem quibusdam sit aliquam laboriosam
-        officia.
-      </p>
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 };
