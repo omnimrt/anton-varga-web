@@ -5,57 +5,57 @@
     "images": [
       {
         "id": 1,
-        "path": "images/CSB light (2023-2024)/anton production1740.jpg",
+        "path": "/images/CSB light (2023-2024)/anton production1740.jpg",
         "alt": "CSB light - Image 1"
       },
       {
         "id": 2,
-        "path": "images/CSB light (2023-2024)/anton production1743.jpg",
+        "path": "/images/CSB light (2023-2024)/anton production1743.jpg",
         "alt": "CSB light - Image 2"
       },
       {
         "id": 3,
-        "path": "images/CSB light (2023-2024)/anton production1762.jpg",
+        "path": "/images/CSB light (2023-2024)/anton production1762.jpg",
         "alt": "CSB light - Image 3"
       },
       {
         "id": 4,
-        "path": "images/CSB light (2023-2024)/anton production1782.jpg",
+        "path": "/images/CSB light (2023-2024)/anton production1782.jpg",
         "alt": "CSB light - Image 4"
       },
       {
         "id": 5,
-        "path": "images/CSB light (2023-2024)/anton production1785.jpg",
+        "path": "/images/CSB light (2023-2024)/anton production1785.jpg",
         "alt": "CSB light - Image 5"
       },
       {
         "id": 6,
-        "path": "images/CSB light (2023-2024)/anton production1791.jpg",
+        "path": "/images/CSB light (2023-2024)/anton production1791.jpg",
         "alt": "CSB light - Image 6"
       },
       {
         "id": 7,
-        "path": "images/CSB light (2023-2024)/anton production1798.jpg",
+        "path": "/images/CSB light (2023-2024)/anton production1798.jpg",
         "alt": "CSB light - Image 7"
       },
       {
         "id": 8,
-        "path": "images/CSB light (2023-2024)/anton production1802.jpg",
+        "path": "/images/CSB light (2023-2024)/anton production1802.jpg",
         "alt": "CSB light - Image 8"
       },
       {
         "id": 9,
-        "path": "images/CSB light (2023-2024)/anton production1817.jpg",
+        "path": "/images/CSB light (2023-2024)/anton production1817.jpg",
         "alt": "CSB light - Image 9"
       },
       {
         "id": 10,
-        "path": "images/CSB light (2023-2024)/anton production1823.jpg",
+        "path": "/images/CSB light (2023-2024)/anton production1823.jpg",
         "alt": "CSB light - Image 10"
       },
       {
         "id": 11,
-        "path": "images/CSB light (2023-2024)/anton production1848.jpg",
+        "path": "/images/CSB light (2023-2024)/anton production1848.jpg",
         "alt": "CSB light - Image 11"
       },
       {
@@ -91,47 +91,47 @@
     "images": [
       {
         "id": 17,
-        "path": "images/Here and Then at Dusk (2022)/DUSK_1-min.jpg",
+        "path": "/images/Here and Then at Dusk (2022)/DUSK_1-min.jpg",
         "alt": "Here and Then at Dusk - Image 1"
       },
       {
         "id": 18,
-        "path": "images/Here and Then at Dusk (2022)/DUSK_10-min.jpg",
+        "path": "/images/Here and Then at Dusk (2022)/DUSK_10-min.jpg",
         "alt": "Here and Then at Dusk - Image 2"
       },
       {
         "id": 19,
-        "path": "images/Here and Then at Dusk (2022)/DUSK_11-min.jpg",
+        "path": "/images/Here and Then at Dusk (2022)/DUSK_11-min.jpg",
         "alt": "Here and Then at Dusk - Image 3"
       },
       {
         "id": 20,
-        "path": "images/Here and Then at Dusk (2022)/DUSK_3-min.jpg",
+        "path": "/images/Here and Then at Dusk (2022)/DUSK_3-min.jpg",
         "alt": "Here and Then at Dusk - Image 4"
       },
       {
         "id": 21,
-        "path": "images/Here and Then at Dusk (2022)/DUSK_4-min.jpg",
+        "path": "/images/Here and Then at Dusk (2022)/DUSK_4-min.jpg",
         "alt": "Here and Then at Dusk - Image 5"
       },
       {
         "id": 22,
-        "path": "images/Here and Then at Dusk (2022)/DUSK_5-min.jpg",
+        "path": "/images/Here and Then at Dusk (2022)/DUSK_5-min.jpg",
         "alt": "Here and Then at Dusk - Image 6"
       },
       {
         "id": 23,
-        "path": "images/Here and Then at Dusk (2022)/DUSK_7-min.jpg",
+        "path": "/images/Here and Then at Dusk (2022)/DUSK_7-min.jpg",
         "alt": "Here and Then at Dusk - Image 7"
       },
       {
         "id": 24,
-        "path": "images/Here and Then at Dusk (2022)/DUSK_8-min.jpg",
+        "path": "/images/Here and Then at Dusk (2022)/DUSK_8-min.jpg",
         "alt": "Here and Then at Dusk - Image 8"
       },
       {
         "id": 25,
-        "path": "images/Here and Then at Dusk (2022)/DUSK_9-min.jpg",
+        "path": "/images/Here and Then at Dusk (2022)/DUSK_9-min.jpg",
         "alt": "Here and Then at Dusk - Image 9"
       }
     ]
@@ -142,47 +142,47 @@
     "images": [
       {
         "id": 26,
-        "path": "images/Untitled practice (2014)/Untitled practice_1.2.jpg",
+        "path": "/images/Untitled practice (2014)/Untitled practice_1.2.jpg",
         "alt": "Untitled Practice (2014) - Image 1"
       },
       {
         "id": 27,
-        "path": "images/Untitled practice (2014)/Untitled practice_1.3.jpg",
+        "path": "/images/Untitled practice (2014)/Untitled practice_1.3.jpg",
         "alt": "Untitled Practice (2014) - Image 2"
       },
       {
         "id": 28,
-        "path": "images/Untitled practice (2014)/Untitled practice_1.4.jpg",
+        "path": "/images/Untitled practice (2014)/Untitled practice_1.4.jpg",
         "alt": "Untitled Practice (2014) - Image 4"
       },
       {
         "id": 29,
-        "path": "images/Untitled practice (2014)/Untitled practice_1.5.jpg",
+        "path": "/images/Untitled practice (2014)/Untitled practice_1.5.jpg",
         "alt": "Untitled Practice (2014) - Image 5"
       },
       {
         "id": 30,
-        "path": "images/Untitled practice (2014)/Untitled practice_1.8.jpg",
+        "path": "/images/Untitled practice (2014)/Untitled practice_1.8.jpg",
         "alt": "Untitled Practice (2014) - Image 6"
       },
       {
         "id": 31,
-        "path": "images/Untitled practice (2014)/Untitled practice_1.9.jpg",
+        "path": "/images/Untitled practice (2014)/Untitled practice_1.9.jpg",
         "alt": "Untitled Practice (2014) - Image 7"
       },
       {
         "id": 32,
-        "path": "images/Untitled practice (2014)/Untitled practice_1.11.jpg",
+        "path": "/images/Untitled practice (2014)/Untitled practice_1.11.jpg",
         "alt": "Untitled Practice (2014) - Image 8"
       },
       {
         "id": 33,
-        "path": "images/Untitled practice (2014)/Untitled practice_1.12.JPG",
+        "path": "/images/Untitled practice (2014)/Untitled practice_1.12.JPG",
         "alt": "Untitled Practice (2014) - Image 9"
       },
       {
         "id": 34,
-        "path": "images/Untitled practice (2014)/Untitled practice_module.jpg",
+        "path": "/images/Untitled practice (2014)/Untitled practice_module.jpg",
         "alt": "Untitled Practice (2014) - Image 10"
       }
     ]
@@ -193,47 +193,47 @@
     "images": [
       {
         "id": 35,
-        "path": "images/Untitled Practice III (2016)/Untitled practice_3.1-min.png",
+        "path": "/images/Untitled Practice III (2016)/Untitled practice_3.1-min.png",
         "alt": "Untitled Practice III (2016) - Image 1"
       },
       {
         "id": 36,
-        "path": "images/Untitled Practice III (2016)/Untitled practice_3.2-min.png",
+        "path": "/images/Untitled Practice III (2016)/Untitled practice_3.2-min.png",
         "alt": "Untitled Practice III (2016) - Image 2"
       },
       {
         "id": 37,
-        "path": "images/Untitled Practice III (2016)/Untitled practice_3.3-min.png",
+        "path": "/images/Untitled Practice III (2016)/Untitled practice_3.3-min.png",
         "alt": "Untitled Practice III (2016) - Image 3"
       },
       {
         "id": 38,
-        "path": "images/Untitled Practice III (2016)/Untitled practice_3.4-min.png",
+        "path": "/images/Untitled Practice III (2016)/Untitled practice_3.4-min.png",
         "alt": "Untitled Practice III (2016) - Image 4"
       },
       {
         "id": 39,
-        "path": "images/Untitled Practice III (2016)/Untitled practice_3.5-min.png",
+        "path": "/images/Untitled Practice III (2016)/Untitled practice_3.5-min.png",
         "alt": "Untitled Practice III (2016) - Image 5"
       },
       {
         "id": 40,
-        "path": "images/Untitled Practice III (2016)/Untitled practice_3.6-min.png",
+        "path": "/images/Untitled Practice III (2016)/Untitled practice_3.6-min.png",
         "alt": "Untitled Practice III (2016) - Image 6"
       },
       {
         "id": 41,
-        "path": "images/Untitled Practice III (2016)/Untitled practice_3.7-min.png",
+        "path": "/images/Untitled Practice III (2016)/Untitled practice_3.7-min.png",
         "alt": "Untitled Practice III (2016) - Image 7"
       },
       {
         "id": 42,
-        "path": "images/Untitled Practice III (2016)/Untitled practice_3.8-min.png",
+        "path": "/images/Untitled Practice III (2016)/Untitled practice_3.8-min.png",
         "alt": "Untitled Practice III (2016) - Image 8"
       },
       {
         "id": 43,
-        "path": "images/Untitled Practice III (2016)/Untitled practice_3.9-min.png",
+        "path": "/images/Untitled Practice III (2016)/Untitled practice_3.9-min.png",
         "alt": "Untitled Practice III (2016) - Image 9"
       }
     ]
@@ -244,52 +244,52 @@
     "images": [
       {
         "id": 44,
-        "path": "images/Untitled Practice VII(2018)/Untitled practice_7.1.png",
+        "path": "/images/Untitled Practice VII(2018)/Untitled practice_7.1.png",
         "alt": "Untitled Practice VII (2018) - Image 1"
       },
       {
         "id": 45,
-        "path": "images/Untitled Practice VII(2018)/Untitled practice_7.2.1.jpg",
+        "path": "/images/Untitled Practice VII(2018)/Untitled practice_7.2.1.jpg",
         "alt": "Untitled Practice VII (2018) - Image 2"
       },
       {
         "id": 46,
-        "path": "images/Untitled Practice VII(2018)/Untitled practice_7.2.2.png",
+        "path": "/images/Untitled Practice VII(2018)/Untitled practice_7.2.2.png",
         "alt": "Untitled Practice VII (2018) - Image 3"
       },
       {
         "id": 47,
-        "path": "images/Untitled Practice VII(2018)/Untitled practice_7.2.3.png",
+        "path": "/images/Untitled Practice VII(2018)/Untitled practice_7.2.3.png",
         "alt": "Untitled Practice VII (2018) - Image 4"
       },
       {
         "id": 48,
-        "path": "images/Untitled Practice VII(2018)/Untitled practice_7.3.1.png",
+        "path": "/images/Untitled Practice VII(2018)/Untitled practice_7.3.1.png",
         "alt": "Untitled Practice VII (2018) - Image 5"
       },
       {
         "id": 49,
-        "path": "images/Untitled Practice VII(2018)/Untitled practice_7.3.2.png",
+        "path": "/images/Untitled Practice VII(2018)/Untitled practice_7.3.2.png",
         "alt": "Untitled Practice VII (2018) - Image 6"
       },
       {
         "id": 50,
-        "path": "images/Untitled Practice VII(2018)/Untitled practice_7.3.3.png",
+        "path": "/images/Untitled Practice VII(2018)/Untitled practice_7.3.3.png",
         "alt": "Untitled Practice VII (2018) - Image 7"
       },
       {
         "id": 51,
-        "path": "images/Untitled Practice VII(2018)/Untitled practice_7.4.1.png",
+        "path": "/images/Untitled Practice VII(2018)/Untitled practice_7.4.1.png",
         "alt": "Untitled Practice VII (2018) - Image 8"
       },
       {
         "id": 52,
-        "path": "images/Untitled Practice VII(2018)/Untitled practice_7.4.2.png",
+        "path": "/images/Untitled Practice VII(2018)/Untitled practice_7.4.2.png",
         "alt": "Untitled Practice VII (2018) - Image 9"
       },
       {
         "id": 53,
-        "path": "images/Untitled Practice VII(2018)/Untitled practice_7.4.3.png",
+        "path": "/images/Untitled Practice VII(2018)/Untitled practice_7.4.3.png",
         "alt": "Untitled Practice VII (2018) - Image 10"
       }
     ]
