@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
 import css from "./ProjectList.module.css";
 
 const ProjectList = ({ projects }) => {
@@ -14,6 +13,7 @@ const ProjectList = ({ projects }) => {
           </li>
         ))}
       </ul>
+      <NavLink className={css.openGroup}>#Open Group/Відкрита група</NavLink>
     </div>
   );
 };

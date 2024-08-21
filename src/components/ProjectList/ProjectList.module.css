@@ -1,12 +1,18 @@
 .projectLink {
-  text-decoration: none;
+  /* text-decoration: none;
   color: #000;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 300;
   letter-spacing: 0.5px;
-  margin-bottom: 15px;
-  display: block;
+  display: block; */
+  font-family: Abhaya Libre;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.52px;
+  text-align: left;
+  text-decoration: none;  
+  color: #000;
 }
 
 .projectItem {
@@ -15,5 +21,25 @@
 
 .projectList {
   padding: 0;
-  margin-top: 15px;
+  margin-left: 55px;
+  padding-top: 25px;
+}
+
+
+
+.openGroup {
+  margin-left: 55px;
+  font-family: Actor;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16.52px;
+  text-align: left;
+  text-decoration:wavy; 
+  color: #000;
+}
+
+.active {
+  /* Override the default active class styles */
+  color: inherit;  /* Example: Remove color change */
+  text-decoration: none;  /* Example: Remove underline */
 }

@@ -7,11 +7,13 @@ const NavBar = () => {
     <header>
       <nav className={css.nav}>
         <NavLink to="/" className={css.link}>
-          <h1 className={css.logo}>Anton Varga</h1>
+          Anton Varga&nbsp; 
         </NavLink>
+        <span>/</span>
         <NavLink to="/about" className={css.link}>
           about
         </NavLink>
+         <span>/</span>
         <NavLink to="/cv" className={`${css.link} ${css.cvLink}`}>
           cv
         </NavLink>
