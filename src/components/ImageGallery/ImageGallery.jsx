@@ -1,14 +1,23 @@
-import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
-import css from "./ImageGallery.module.css";
-import ProjectDetails from "../ProjectDetails/ProjectDetails";
+import { useState, useEffect, useRef } from 'react';
+import { useParams } from 'react-router-dom';
+import css from './ImageGallery.module.css';
+import FsLightbox from 'fslightbox-react';
 
 const ImageGallery = ({ projects }) => {
   const { id: currentId } = useParams();
   const [selectedImage, setSelectedImage] = useState(null);
+  const [toggler, setToggler] = useState(false); // To control the lightbox
+  const selectedImageRef = useRef(null); // Create a ref for the selected image
 
   useEffect(() => {
-    console.log("Selected Image:", selectedImage);
+    if (selectedImage && selectedImageRef.current) {
+      const imagePosition =
+        selectedImageRef.current.getBoundingClientRect().top;
+      window.scrollTo({
+        top: window.scrollY + imagePosition - 50, // Adjust -50 to whatever fits your design
+        behavior: 'smooth',
+      });
+    }
   }, [selectedImage]);
 
   // Reset selectedImage when the id parameter changes
@@ -17,41 +26,77 @@ const ImageGallery = ({ projects }) => {
   }, [currentId]);
 
   const selectedProject = projects.find(
-    (project) => project.id === parseInt(currentId) || currentId === undefined
+    project => project.id === parseInt(currentId) || currentId === undefined
   );
 
-  const handleImageClick = (image) => {
+  const handleImageClick = image => {
     setSelectedImage(image);
+    setToggler(true); // Open lightbox when an image is clicked
+  };
+
+  const handleLightboxClose = () => {
+    setToggler(false); // Close the lightbox
   };
 
   return (
-    <div className={css.container}>
+    <div className={css.imageGalleryContainer}>
       {selectedImage ? (
-        <ProjectDetails
-          selectedProject={selectedProject}
-          selectedImage={selectedImage}
-        />
-      ) : (
-        <div>
-          <ul className={css.imageList}>
-            {selectedProject?.images.map((image) => (
-              <li className={css.imageItem} key={image.id}>
-                <img
-                  src={image.path}
-                  alt={image.alt}
-                  onClick={() => handleImageClick(image)}
-                />
-              </li>
-            ))}
-            </ul>
-            <div className={css.descriptionContainer}>
-              <h1 className={css.title}>{selectedProject?.title}</h1>
-              <h2 className={css.date}>June 22 - July 20, 2022, Elma, NYC</h2>
-              <p className={css.description}>The End of History is a joke. At least it’s what my friend Lukas affirms to me while sipping his tequila and soda. That’s also what Derrida wanted us to believe in writing his Specters of Marx. After attending Boris Groys’ seminars about it, and imaging it for two years, I still can’t say if it’s all that funny. The truth is that even the lightest version of it leaves us in the end with the outcomes of capitalist-realism that made me depressed enough to slowly slide down into an eschatological mode, upsetting the ultimate Hegelian difference that the End of History( the E.H.) is not the End of the World. For more than two years as a painter, I imagined these apocalyptic landscapes ( as the “last,” the “final” images) made in a manner that endeavors to communicate their dystopia through Socialist Realism, subverting its traditionally victorious, utopian lens. Inspired by Kojev’s approach to philosophy as transmitting the E.H. idea further, I saw this series as an appeal to a short message, as a handy means of communicating the notion: the End of History has arrived—and its arrival is expressed in the painful disappearance of utopian will from our societies. Alexandr Deyneka’s Donbas. Lunch Break (1935) serves as the basis for the works on unstretched canvases, by way of fragments that nod to Deyneka’s imagery. This classic Socialist Realist painting depicts beautiful young proletarian miners at their lunch break bathing in the river, against a background of industrial features of Donbas. Almost a century after Deyneka’s creation of this work, the nature of the light on their shoulders changed, Donbas has become the theater of a Russian-Ukrainian war and humanitarian crisis. </p>
-            </div>
-
+        // Column layout after selecting an image
+        <div className={css.columnLayout}>
+          <img
+            src={selectedImage.path}
+            alt={selectedImage.alt}
+            className={css.selectedImage}
+            ref={selectedImageRef}
+            onClick={() => setToggler(true)} // Open lightbox when the selected image is clicked
+          />
+          <ul className={css.columnLayout}>
+            {selectedProject?.images
+              .filter(image => image.id !== selectedImage.id)
+              .map(image => (
+                <li className={css.imageItemColumn} key={image.id}>
+                  <img
+                    src={image.path}
+                    alt={image.alt}
+                    onClick={() => handleImageClick(image)} // Select an image when clicked
+                  />
+                </li>
+              ))}
+          </ul>
         </div>
+      ) : (
+        // Original grid layout before selecting an image
+        <ul className={css.imageList}>
+          {selectedProject?.images.map(image => (
+            <li className={css.imageItem} key={image.id}>
+              <img
+                src={image.path}
+                alt={image.alt}
+                onClick={() => handleImageClick(image)} // Select an image when clicked
+              />
+            </li>
+          ))}
+        </ul>
       )}
+
+      {/* fsLightbox Component */}
+      {selectedImage && (
+        <FsLightbox
+          toggler={toggler} // Control lightbox visibility
+          sources={selectedProject?.images.map(image => image.path)} // List of image sources for lightbox
+          type="image" // Set lightbox type to image
+          slide={selectedProject?.images.findIndex(
+            image => image.id === selectedImage.id
+          )} // Highlight selected image in the lightbox
+          onClose={handleLightboxClose} // Close the lightbox when clicked
+        />
+      )}
+
+      <div className={css.descriptionContainer}>
+        <h1 className={css.title}>{selectedProject?.title}</h1>
+        <h2 className={css.date}>June 22 - July 20, 2022, Elma, NYC</h2>
+        <p className={css.description}>The End of History is a joke...</p>
+      </div>
     </div>
   );
 };

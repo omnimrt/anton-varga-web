@@ -11,7 +11,7 @@
   font-weight: 400;
   line-height: 16.52px;
   text-align: left;
-  text-decoration: none;  
+  text-decoration: none;
   color: #000;
 }
 
@@ -19,13 +19,20 @@
   list-style-type: none;
 }
 
+/* .projectList {
+  padding: 0;
+  margin-left: 55px;
+  padding-top: 25px;
+} */
+
 .projectList {
   padding: 0;
   margin-left: 55px;
   padding-top: 25px;
+  position: sticky; /* Makes the element sticky */
+  top: 0; /* Adjusts the top offset from the viewport */
+  z-index: 100; /* Ensures it stays above other content if necessary */
 }
-
-
 
 .openGroup {
   margin-left: 55px;
@@ -34,12 +41,12 @@
   font-weight: 400;
   line-height: 16.52px;
   text-align: left;
-  text-decoration:wavy; 
+  text-decoration: wavy;
   color: #000;
 }
 
 .active {
   /* Override the default active class styles */
-  color: inherit;  /* Example: Remove color change */
-  text-decoration: none;  /* Example: Remove underline */
+  color: inherit; /* Example: Remove color change */
+  text-decoration: none; /* Example: Remove underline */
 }

@@ -6,9 +6,8 @@
 }
 
 body {
-  /* padding: 70px 95px 50px 25px; */
-  /* overflow: hidden; */
   max-width: 1440px;
+  margin: 0 auto; /* Center the body content */
 }
 
 li {
@@ -35,16 +34,28 @@ p {
 .app-container {
   display: flex;
   flex-direction: row;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevent unwanted scrolling */
 }
 
 .aside-container {
-  flex: 0 0 33.33%; /* Take 1/3 of the screen width */
+  flex: 0 0 33.33%; /* Sidebar width: 1/3 of the screen */
+  height: 100vh; /* Full height for sticky scrolling */
+  overflow-y: auto; /* Allow scrolling within the sidebar */
+  padding: 20px; /* Add some padding for content spacing */
 }
 
 .main-container {
-  flex: 0 0 66.67%; /* Take 2/3 of the screen width */
+  flex: 0 0 66.67%; /* Main content: 2/3 of the screen */
+  height: 100vh; /* Full height */
+  overflow-y: auto; /* Allow scrolling in the main content area */
+  padding: 20px; /* Optional: Add spacing inside the main container */
 }
 
-/* Add any other necessary styling */
-
-/* Add any other necessary styling */
+.projectList {
+  padding: 0;
+  margin: 0;
+  position: sticky; /* Enable sticky behavior */
+  top: 20px; /* Adjust based on desired position */
+  z-index: 10; /* Ensure it's on top of overlapping content */
+}

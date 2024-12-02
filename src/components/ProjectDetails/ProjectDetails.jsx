@@ -1,5 +1,3 @@
-import { CCarousel, CCarouselItem, CImage } from '@coreui/react';
-import '@coreui/coreui/dist/css/coreui.min.css';
 import css from './ProjectDetails.module.css';
 
 const ProjectDetails = ({ selectedProject, selectedImage }) => {
@@ -13,23 +11,6 @@ const ProjectDetails = ({ selectedProject, selectedImage }) => {
 
   return (
     <div className={css.container}>
-      <CCarousel
-        className={css.carouselContainer}
-        controls
-        indicators
-        transition="crossfade"
-        activeIndex={selectedIndex}
-      >
-        {selectedProject.images.map(image => (
-          <CCarouselItem key={image.id}>
-            <CImage
-              className="d-block w-100"
-              src={image.path}
-              alt={image.alt}
-            />
-          </CCarouselItem>
-        ))}
-      </CCarousel>
       <div className={css.descriptionContainer}>
         <div className={css.projectInfo}>
           <h2 className={css.title}>{selectedProject.title}</h2>
