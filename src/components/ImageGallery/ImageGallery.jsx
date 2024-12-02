@@ -1,12 +1,10 @@
 import { useState, useEffect, useRef } from 'react';
 import { useParams } from 'react-router-dom';
 import css from './ImageGallery.module.css';
-import FsLightbox from 'fslightbox-react';
 
 const ImageGallery = ({ projects }) => {
   const { id: currentId } = useParams();
   const [selectedImage, setSelectedImage] = useState(null);
-  const [toggler, setToggler] = useState(false); // To control the lightbox
   const selectedImageRef = useRef(null); // Create a ref for the selected image
 
   useEffect(() => {
@@ -31,11 +29,6 @@ const ImageGallery = ({ projects }) => {
 
   const handleImageClick = image => {
     setSelectedImage(image);
-    setToggler(true); // Open lightbox when an image is clicked
-  };
-
-  const handleLightboxClose = () => {
-    setToggler(false); // Close the lightbox
   };
 
   return (
@@ -48,7 +41,6 @@ const ImageGallery = ({ projects }) => {
             alt={selectedImage.alt}
             className={css.selectedImage}
             ref={selectedImageRef}
-            onClick={() => setToggler(true)} // Open lightbox when the selected image is clicked
           />
           <ul className={css.columnLayout}>
             {selectedProject?.images
@@ -77,19 +69,6 @@ const ImageGallery = ({ projects }) => {
             </li>
           ))}
         </ul>
-      )}
-
-      {/* fsLightbox Component */}
-      {selectedImage && (
-        <FsLightbox
-          toggler={toggler} // Control lightbox visibility
-          sources={selectedProject?.images.map(image => image.path)} // List of image sources for lightbox
-          type="image" // Set lightbox type to image
-          slide={selectedProject?.images.findIndex(
-            image => image.id === selectedImage.id
-          )} // Highlight selected image in the lightbox
-          onClose={handleLightboxClose} // Close the lightbox when clicked
-        />
       )}
 
       <div className={css.descriptionContainer}>
