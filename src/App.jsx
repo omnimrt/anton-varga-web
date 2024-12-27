@@ -1,16 +1,16 @@
-import { Routes, Route } from "react-router-dom";
-import { lazy, Suspense } from "react";
-import projects from "./projects.json";
+import { Routes, Route } from 'react-router-dom';
+import { lazy, Suspense } from 'react';
+import projects from './projects.json';
 
-const NavBar = lazy(() => import("./components/NavBar/NavBar"));
-const ProjectList = lazy(() => import("./components/ProjectList/ProjectList"));
+const NavBar = lazy(() => import('./components/NavBar/NavBar'));
+const ProjectList = lazy(() => import('./components/ProjectList/ProjectList'));
 const ImageGallery = lazy(() =>
-  import("./components/ImageGallery/ImageGallery")
+  import('./components/ImageGallery/ImageGallery')
 );
-const AboutPage = lazy(() => import("./pages/AboutPage/AboutPage"));
-const CvPage = lazy(() => import("./pages/CvPage"));
+const AboutPage = lazy(() => import('./pages/AboutPage/AboutPage'));
+const CvPage = lazy(() => import('./pages/CvPage'));
 
-import "./App.css";
+import './App.css';
 
 function App() {
   return (

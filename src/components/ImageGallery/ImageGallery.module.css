@@ -1,5 +1,10 @@
+/* Image gallery */
+
 .imageGalleryContainer {
-  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  /* outline: 1px solid red; */
 }
 
 .imageList {
@@ -8,29 +13,45 @@
   gap: 5px;
   flex-wrap: wrap;
   justify-content: flex-end;
-  margin-top: 100px;
-  margin-right: 145px;
-  margin-bottom: 89px;
+  width: 100%;
+  /* margin-right: 145px;
+  margin-bottom: 89px; */
   list-style-type: none;
+  /* outline: 1px solid red; */
+}
+
+.imageItem {
+  width: 181.75px;
+  height: 123.75px;
 }
 
 .imageItem img {
-  width: 178px;
-  height: 120px;
+  width: 181.75px;
+  height: 123.75px;
   object-fit: cover;
-  /* border: 10px solid rgb(174, 15, 0); */
+  /* border: 1px solid rgb(174, 15, 0); */
   /* border-radius: 2px; */
 }
 
+/* Description */
+
 .descriptionContainer {
-  margin-right: 424px;
+  position: absolute;
+  top: 515px;
+  left: 535px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  /* outline: 1px solid red; */
+  margin-top: 89px;
 }
 
 .title {
   font-family: Abhaya Libre;
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 400;
   line-height: 28.31px;
+  width: 681px;
 }
 
 .date {
@@ -44,9 +65,10 @@
 .description {
   margin-top: 30px;
   font-family: Abhaya Libre;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 400;
-  line-height: 16.52px;
+  /* line-height: 16.52px; */
+  width: 681px;
 }
 
 /* Layout for when an image is selected */
