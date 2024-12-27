@@ -29,6 +29,7 @@
   width: 181.75px;
   height: 123.75px;
   object-fit: cover;
+  cursor: pointer;
   /* border: 1px solid rgb(174, 15, 0); */
   /* border-radius: 2px; */
 }
